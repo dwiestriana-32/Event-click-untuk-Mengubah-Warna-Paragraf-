@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color Example</title>
+</head>
+<body>
+
+    <p id="myParagraph">Ini adalah paragraf yang warna teksnya akan berubah ketika tombol diklik.</p>
+
+    <button id="changeColorButton">Change Color</button>
+
+    <script>
+        // Mendapatkan elemen tombol dan paragraf
+        const button = document.getElementById("changeColorButton");
+        const paragraph = document.getElementById("myParagraph");
+
+        // Menambahkan event listener untuk klik pada tombol
+        button.addEventListener("click", function() {
+            // Mengubah warna teks paragraf menjadi biru
+            paragraph.style.color = "blue";
+        });
+    </script>
+
+</body>
+</html>
